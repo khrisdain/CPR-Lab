@@ -1,0 +1,128 @@
+/*LAB 4.2 - USING <div>s AND STYLING TEXT*/
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    justify-content: center; /*Aligns horizontally*/
+    align-items: center; /*Vertical alignment*/
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 70%;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 10px; 
+    overflow: auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #fff;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1{
+    font-size: 34px;
+    margin: 0;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #504750;
+    font-weight: bold;
+    font-size: 17px;
+    transition: color 0.3s ease; /*Ease in color property on hover*/
+}  
+
+nav ul li a:hover{
+    color: #1f1f84;
+}
+
+#mainPhoto {
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    border: 2px solid #ccc; /*Visualise div container*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#mainPhoto img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+#communities {
+  background-color: #e4dfda;  
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+#communities h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+#communities ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /*wrap for smaller screens*/
+    padding: 0;
+    list-style: none;
+}
+
+#communities li {
+    flex: 1 1 18%; /*Screen Size takes 18% of total width */
+    text-align: center; /*vertical */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#communities li:hover {
+    height: 120px;
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #52414c;
+    padding: 20px;
+}
+
+footer p{
+    color: #fff;
+}
